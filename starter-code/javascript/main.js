@@ -11,7 +11,8 @@ var splitList = document.getElementById('splits');
 
 
 function printTime() {
-    //console.log(`${chronometer.minutes}:${chronometer.seconds}`);
+   if(!btnLeft)
+   return;
     printMinutes();
     printSeconds();
 }

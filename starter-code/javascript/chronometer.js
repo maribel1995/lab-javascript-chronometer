@@ -37,11 +37,11 @@ Chronometer.prototype.twoDigitsNumber = function (number) {
 Chronometer.prototype.setTime = function () {
     this.minutes = this.twoDigitsNumber(this.setMinutes());
     this.seconds = this.twoDigitsNumber(this.setSeconds());
-
+    this.setMilliseconds();
 };
 
 Chronometer.prototype.setMilliseconds = function () {
-
+    console.log(this.currentTime * 1000);
 };
 
 Chronometer.prototype.stopClick = function () {
